@@ -4675,6 +4675,11 @@
           "items": {
             "$ref": "#/definitions/VpnSiteLink"
           }
+        },
+        "o365Policy": {
+          "readOnly": false,
+          "description": "Office 365 Policy.",
+          "$ref": "#/definitions/Office365PolicyProperties"
         }
       },
       "description": "Parameters for VpnSite."
@@ -4801,6 +4806,11 @@
         "outputBlobSasUrl": {
           "type": "string",
           "description": "The sas-url to download the configurations for vpn-sites."
+        },
+        "officeKeys": {
+          "readOnly": false,
+          "description": "Office 365 Policy.",
+          "$ref": "#/definitions/OfficeKeys"
         }
       },
       "required": [
@@ -5286,6 +5296,10 @@
         "routingConfiguration": {
           "$ref": "#/definitions/RoutingConfiguration",
           "description": "The Routing Configuration indicating the associated and propagated route tables on this connection."
+        },
+        "enableOfficeTelemetry": {
+          "type": "boolean",
+          "description": "Enable office telemetry flag."
         }
       },
       "description": "Parameters for VpnConnection."
@@ -6667,6 +6681,57 @@
           "description": "The type of the specified resource like RouteTable, ExpressRouteConnection, HubVirtualNetworkConnection, VpnConnection and P2SConnection."
         }
       }
+    },
+    "Office365PolicyProperties": {
+      "properties": {
+        "breakOutCategories": {
+          "readOnly": false,
+          "description": "Office 365 breakout categories.",
+          "$ref": "#/definitions/BreakOutCategoryPolicies"
+        }
+      },
+      "description": "The office 365 breakout policy."
+    },
+    "BreakOutCategoryPolicies": {
+      "properties": {
+        "allow": {
+          "type": "boolean",
+          "readOnly": false,
+          "description": "Flag to control breakout of o365 allow category."
+        },
+        "optimize": {
+          "type": "boolean",
+          "readOnly": false,
+          "description": "Flag to control breakout of o365 optimize category."
+        },
+        "default": {
+          "type": "boolean",
+          "readOnly": false,
+          "description": "Flag to control breakout of o365 default category."
+        }
+      },
+      "description": "Office 365 traffic breakout policy categories."
+    },
+    "OfficeKeys": {
+      "properties": {
+        "tenantId": {
+          "type": "string",
+          "readOnly": false,
+          "description": "The tenant Id."
+        },
+        "clientId": {
+          "type": "string",
+          "readOnly": false,
+          "description": "The client Id."
+        },
+        "clientSecret": {
+          "type": "string",
+          "readOnly": false,
+          "description": "The client secret."
+        }
+      },
+      "description": "The office keys."
     }
+
   }
 }
