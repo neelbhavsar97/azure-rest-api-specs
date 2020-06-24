@@ -4679,7 +4679,7 @@
         "o365Policy": {
           "readOnly": false,
           "description": "Office 365 Policy.",
-          "$ref": "#/definitions/Office365PolicyProperties"
+          "$ref": "#/definitions/O365PolicyProperties"
         }
       },
       "description": "Parameters for VpnSite."
@@ -6682,17 +6682,17 @@
         }
       }
     },
-    "Office365PolicyProperties": {
+    "O365PolicyProperties": {
       "properties": {
         "breakOutCategories": {
           "readOnly": false,
           "description": "Office 365 breakout categories.",
-          "$ref": "#/definitions/BreakOutCategoryPolicies"
+          "$ref": "#/definitions/O365BreakOutCategoryPolicies"
         }
       },
       "description": "The office 365 breakout policy."
     },
-    "BreakOutCategoryPolicies": {
+    "O365BreakOutCategoryPolicies": {
       "properties": {
         "allow": {
           "type": "boolean",
