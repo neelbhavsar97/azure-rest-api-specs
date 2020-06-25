@@ -4810,7 +4810,7 @@
         "officeKeys": {
           "readOnly": false,
           "description": "Office 365 Policy.",
-          "$ref": "#/definitions/OfficeKeys"
+          "$ref": "#/definitions/O365Keys"
         }
       },
       "required": [
@@ -6712,7 +6712,7 @@
       },
       "description": "Office 365 traffic breakout policy categories."
     },
-    "OfficeKeys": {
+    "O365Keys": {
       "properties": {
         "tenantId": {
           "type": "string",
