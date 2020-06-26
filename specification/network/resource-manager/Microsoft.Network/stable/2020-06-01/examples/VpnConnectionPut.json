@@ -22,7 +22,8 @@
               "sharedKey": "key"
             }
           }
-        ]
+        ],
+        "enableOfficeTelemetry": true
       }
     }
   },
