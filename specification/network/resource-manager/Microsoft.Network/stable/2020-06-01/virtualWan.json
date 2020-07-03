@@ -4806,11 +4806,6 @@
         "outputBlobSasUrl": {
           "type": "string",
           "description": "The sas-url to download the configurations for vpn-sites."
-        },
-        "officeKeys": {
-          "readOnly": false,
-          "description": "Office 365 Policy.",
-          "$ref": "#/definitions/O365Keys"
         }
       },
       "required": [
@@ -5296,10 +5291,6 @@
         "routingConfiguration": {
           "$ref": "#/definitions/RoutingConfiguration",
           "description": "The Routing Configuration indicating the associated and propagated route tables on this connection."
-        },
-        "enableOfficeTelemetry": {
-          "type": "boolean",
-          "description": "Enable office telemetry flag."
         }
       },
       "description": "Parameters for VpnConnection."
@@ -6711,27 +6702,6 @@
         }
       },
       "description": "Office 365 traffic breakout policy categories."
-    },
-    "O365Keys": {
-      "properties": {
-        "tenantId": {
-          "type": "string",
-          "readOnly": false,
-          "description": "The tenant Id."
-        },
-        "clientId": {
-          "type": "string",
-          "readOnly": false,
-          "description": "The client Id."
-        },
-        "clientSecret": {
-          "type": "string",
-          "readOnly": false,
-          "description": "The client secret."
-        }
-      },
-      "description": "The office keys."
     }
-
   }
 }
