@@ -134,7 +134,6 @@ input-file:
   - Microsoft.Network/stable/2020-05-01/virtualWan.json
   - Microsoft.Network/stable/2020-05-01/vmssNetworkInterface.json
   - Microsoft.Network/stable/2020-05-01/vmssPublicIpAddress.json
-  - Microsoft.Network/stable/2020-05-01/webapplicationfirewall.json
 ```
 
 ### Tag: package-2020-04
